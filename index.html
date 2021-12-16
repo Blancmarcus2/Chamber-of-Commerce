@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcus Blanc">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Inconsolata:wght@300&family=Tangerine&display=swap" rel="stylesheet">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Home Page Chamber Of Commerce</title>
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/daysforecast.js"></script>
+    <script src="js/alert.js"></script>
+    <script defer src="js/getDates.js"></script>
+    <script defer src="js/ads.js"></script>
+    <script src="js/events.js"></script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                There is no weather alert
+            </div>
+            <div class="logo-box">
+                <img class="logo" src="../images/logo.png" alt="logo">
+            <nav>
+                <button onclick="toggleMenu()"> &#9776; Menu</button>
+                <ul id ="menu" class="navigation">
+                    <li class="active"><a href="index.html">Home&nbsp;Page</a></li>
+                    <li><a href="city.html">City</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <picture>
+                <img class="business" src="images/commerce.jpeg" alt="business">
+            </picture>
+                <div id="pagehead">
+                    <h1>Welcome To Chamber Of Commerce</h1>
+                </div>
+                <div class="barner">
+                <img src="images/mairie_de_petionville.jpeg" alt="mairie de petion ville">
+                <button class="action">
+                    <a href="join.html">Call To Action</a>
+                </button>
+                </div>
+                <hr>
+                <h2>Local Company Advertisement</h2>
+                <div>
+                    <img class="mySlides" src="images/marchédepv.jpeg" style="width:400px;">
+                    <img class="mySlides" src="images/communeofpetionville.jpeg" style="width:500px;">
+                    <img class="mySlides" src="images/bestwesternpv.jpeg" style="width:250px;">
+                </div>
+                <hr>
+                <h2>Current weather information</h2>
+                <p><strong>Current Temperature:</strong> <span id="temperature"></span>&deg;C</p>
+                <p><strong>Current Condition Description:</strong> <span id="currentweather"></span></p>
+                <p><strong>Humidity:</strong> <span id="humid"></span>%</p>
+                <hr>
+        
+                <h2 class="days">3 Days Forecast</h2>
+                <div id="forecast"></div>
+                
+                <h3>Purpose Of Chamber Of Commerce</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum cum ratione fugit, officia est deleniti sed 
+                    molestias tempora soluta cumque tempore quis, consequuntur 
+                    eius esse, provident iste tenetur mollitia veritatis.</p>
+                    <hr>
+            <div id="event">
+                <h2>Upcoming Events</h2>
+                <p id="chamber_event_one"></p>
+                <p id="chamber_event_two"></p>
+                <p id="chamber_event_three"></p>
+            </div>
+            <hr>
+            <div>
+                <h2>Contact Information</h2>
+                <p>Motivation MB Chamber Of Commerce is Open
+                    <br>on Monday to Friday
+                    <br>at 8am to 4pm
+                    <br>+509 4408-6409<br>
+                    <br>-President/CEO<br>
+                    <br>-Assistant<br>
+                    <br>Pernier 47 Pétion-ville, HT6140<br>
+                    <br>info@motivationmb.com
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div id="footer">
+                <p>&copy;<span id="copyrightyear"></span> Chamber Of Commerce | <a class="attribution" href="">Attribution</a> | Marcus Blanc</p>
+                <span id="currentdate"></span></p>
+                <p><a class="note" href="#top">Back to top</a></p>
+            </div>
+        </footer>
+        <script defer src="js/getDates.js"></script>
+        <script src="js/toggleMenu.js"></script>
+        <script src="js/banner.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/weatherapi.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ["New Tegomin"]
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

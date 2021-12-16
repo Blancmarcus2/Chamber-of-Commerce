@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcus Blanc">
+    <meta name="description" content="">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Contact Page Chamber Of Commerce</title>
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script src="js/toggleMenu.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <nav>
+          <button onclick="toggleMenu()"> &#9776; Menu</button>
+          <ul id ="menu" class="navigation">
+              <li class="active"><a href="index.html">Home&nbsp;Page</a></li>
+              <li><a href="city.html">City</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+        <h2 class="w3-center">Contact Us</h2>
+         
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+            </div>
+        </div>
+        
+        <p class="w3-center">
+        <button class="w3-button w3-section w3-blue w3-ripple"> Send </button>
+        </p>
+        </form>
+        
+    <footer>
+        <div id="footer">
+            <p>&copy;<span id="copyrightyear"></span> Chamber Of Commerce | <a class="attribution" href="">Attribution</a> | Marcus Blanc</p>
+            <p><a class="note" href="#top">Back to top</a></p>
+        </div>
+    </footer>
+</body>
+</html>
