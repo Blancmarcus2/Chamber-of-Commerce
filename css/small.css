@@ -37,7 +37,7 @@ nav button {
     font-size: 1rem;
     border: none;
 }
-.navigation{
+.navigation {
 	display: block;
     flex: 1 1 auto;
     text-align: center;
@@ -73,60 +73,63 @@ nav a {
 	text-align: center;
 	}
 
-    .business {
-        width: 100%;
-        height: 250px;
-    }
+.business {
+    max-width: 100%;
+    height: 250px;
+    filter: none;
+}
     
-    .barner img{
-        width: 100%;
-        height: 250px;
-    }
+.barner {
+    width: 100%;
+    height: 200px;
+    filter: none;
+    align-items: center;
+}
     
-    .barner button {
-        grid-column: 2;
-        grid-row: 1;
-        text-align: center;
-    }
+.barner button {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
     
-    .barner button {
-        line-height: 2em;
-        width: 10em;
-        font-size: 1.2em;
-        background-color: #1E90FF;
-    }
+.barner button {
+    line-height: 2em;
+    width: 10em;
+    font-size: 1.2em;
+    background-color: #1E90FF;
+}
     
-    /* The alert message box */
-    .alert {
-        padding: 20px;
-        background-color: #f44336;
-        color: white;
-        margin-bottom: 15px;
-        opacity: 1;
-        transition: opacity 0.6s;
-    }
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
     
-    /* The close button */
-    .closebtn {
-        margin-left: 15px;
-        color: white;
-        font-weight: bold;
-        float: right;
-        font-size: 22px;
-        line-height: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
     
-    /* When moving the mouse over the close button*/
-    .closebtn:hover {
-        color: black;
-    }
+/* When moving the mouse over the close button*/
+.closebtn:hover {
+    color: black;
+}
     
-    /* */
-    img .mySlides {
-       align-items: center;
-    }
+/* */
+.mySlides {
+    width: 10%;
+}
 
 #currentweather, #hightemperature, #windChill, #humid, #windSpeed {
     color: orangered;
@@ -163,30 +166,8 @@ nav a {
 }
 
 .img {
-	border-radius: 100px;
+	border-radius: 100%;
 	padding: 0.25rem;
-}
-
-
-.h2-article {
-    text-align: left;
-    font-size: 20px;
-    font-family: "Inconsolata", monospace;
-}
-.img-article {
-    width: 100%;
-    height: 200px;
-}
-.h2-contact {
-    text-align: left;
-}
-.p-contact {
-    text-align: left;
-}
-.img-contact {
-    width: 100%;
-    height: 200px;
-    background-color: #f5f5dc;
 }
 
 #forecast {
@@ -196,6 +177,10 @@ nav a {
     background-color: #f5f5f5;
     font-family: 'Noto Sans Display', sans-serif;
     line-height: 10px;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 /* Footer */
